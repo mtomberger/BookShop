@@ -1,24 +1,19 @@
 package pojo;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity(name = "buch")
-public class Books {
+public class Book {
     @Id
     private int id;
     private String title;
     private int pages;
 
-    public Books() {
+    public Book() {
     }
 
-    public Books(int id, String title, int pages) {
+    public Book(int id, String title, int pages) {
         this.id = id;
         this.title = title;
         this.pages = pages;

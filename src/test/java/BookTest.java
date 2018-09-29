@@ -1,19 +1,19 @@
 import org.junit.*;
-import pojo.Books;
+import pojo.Book;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-public class BooksTest {
+public class BookTest {
     static EntityManagerFactory factory;
     static EntityManager manager;
     static EntityTransaction transaction;
 
     static final String persistenceUnitName = "BookShop";
-    static final int id = 5;
-    static final String title = "The Books";
+    static final int id = 1;
+    static final String title = "The Book";
     static final int pages = 100;
 
     @BeforeClass
@@ -35,11 +35,10 @@ public class BooksTest {
         factory.close();
     }
 
-
     @Test
     public void create() {
         transaction.begin();
-        Books books = new Books(id, title, pages);
+        Book books = new Book(id, title, pages);
         Assert.assertNotNull(books);
         manager.persist(books);
         transaction.commit();
@@ -50,7 +49,7 @@ public class BooksTest {
 
     @Test
     public void modify() {
-        Books books = manager.find(Books.class, id);
+        Book books = manager.find(Book.class, id);
         Assert.assertNotNull(books);
         System.out.println("Found " + books);
 
@@ -58,7 +57,7 @@ public class BooksTest {
         books.addPages(pages);
         transaction.commit();
 
-        books = manager.find(Books.class, id);
+        books = manager.find(Book.class, id);
 
         Assert.assertEquals(pages+pages, (int) books.getPages());
         System.out.println("Updated " + books);
@@ -66,15 +65,15 @@ public class BooksTest {
 
     @Test
     public void remove() {
-        Books books = manager.find(Books.class, id);
+        Book books = manager.find(Book.class, id);
         Assert.assertNotNull(books);
 
         transaction.begin();
         manager.remove(books);
         transaction.commit();
 
-        books = manager.find(Books.class, id);
-        Assert.assertNotNull(books);
+        books = manager.find(Book.class, id);
+        Assert.assertNull(books);
 
         System.out.println("Removed " + id);
     }
