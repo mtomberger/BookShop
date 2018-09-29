@@ -26,4 +26,31 @@ public class Book {
         this.title = title;
         this.pages = pages;
     }
+
+    public void addPages(int pages)
+    {
+        this.pages += pages;
+    }
+
+    /*Getters and Setters*/
+
+    public long getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public int getPages() {
+        return pages;
+    }
+
+    public void setPages(int pages) {
+        this.pages = pages;
+    }
 }
