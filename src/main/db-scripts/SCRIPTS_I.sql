@@ -1,8 +1,8 @@
-CREATE TABLE book (
+CREATE TABLE buch (
    id INTEGER,
    title VARCHAR(75),
    pages INTEGER
 );
 
-ALTER TABLE book
-ADD CONSTRAINT pk_book PRIMARY KEY (id);
+ALTER TABLE buch
+ADD CONSTRAINT pk_buch PRIMARY KEY (id);
