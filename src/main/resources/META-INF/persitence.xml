@@ -1,14 +1,14 @@
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
-    <persistence-unit name="company">
+    <persistence-unit name="BookShop">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <class>pojo.Book</class>
         <properties>
             <property name="javax.persistence.jdbc.driver"
                       value="org.postgresql.Driver"/>
             <property name="javax.persistence.jdbc.url"
-                      value="jdbc:postgresql://localhost:5433/bookshop"/>
-            <property name="javax.persistence.jdbc.user" value="postgres"/>
-            <property name="javax.persistence.jdbc.password" value="postgres"/>
+                      value="jdbc:postgresql://10.65.1.37/swd_ws18_09"/>
+            <property name="javax.persistence.jdbc.user" value="swd_ws18_09"/>
+            <property name="javax.persistence.jdbc.password" value="89LzzJ"/>
         </properties>
     </persistence-unit>
 </persistence>

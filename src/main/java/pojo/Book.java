@@ -2,15 +2,13 @@ package pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-@Getter
-@Setter
-@AllArgsConstructor
 public class Book {
     @Id
     private long id;
@@ -18,7 +16,6 @@ public class Book {
     private int pages;
 
     public Book() {
-
     }
 
     public Book(long id, String title, int pages) {
@@ -32,10 +29,12 @@ public class Book {
         this.pages += pages;
     }
 
-    /*Getters and Setters*/
-
     public long getId() {
         return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getTitle() {

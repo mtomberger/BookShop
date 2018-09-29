@@ -11,8 +11,7 @@ public class BookTest {
     static EntityManager manager;
     static EntityTransaction transaction;
 
-    static final String persistenceUnitName = "company";
-
+    static final String persistenceUnitName = "BookShop";
     static final int id = 1;
     static final String title = "The Book";
     static final int pages = 100;
