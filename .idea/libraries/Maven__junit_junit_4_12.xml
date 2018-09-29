@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Maven: junit:junit:4.12">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jars-20180928/javax.persistence.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jars-20180928/javax.annotation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jars-20180928/javax.jms.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jars-20180928/eclipselink.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jars-20180928/javax.ejb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jars-20180928/javax.servlet.jsp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jars-20180928/javax.transaction.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jars-20180928/postgresql-42.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jars-20180928/javax.servlet.jsp.jstl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jars-20180928/javax.resource.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jars-20180928/javax.servlet.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
