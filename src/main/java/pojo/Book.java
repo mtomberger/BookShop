@@ -8,17 +8,17 @@ import lombok.Setter;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
-public class Book {
+@Entity(name = "buch")
+public class Books {
     @Id
-    private long id;
+    private int id;
     private String title;
     private int pages;
 
-    public Book() {
+    public Books() {
     }
 
-    public Book(long id, String title, int pages) {
+    public Books(int id, String title, int pages) {
         this.id = id;
         this.title = title;
         this.pages = pages;
@@ -33,7 +33,7 @@ public class Book {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

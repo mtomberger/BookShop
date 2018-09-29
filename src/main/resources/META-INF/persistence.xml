@@ -6,7 +6,7 @@
             <property name="javax.persistence.jdbc.driver"
                       value="org.postgresql.Driver"/>
             <property name="javax.persistence.jdbc.url"
-                      value="jdbc:postgresql://10.65.1.37/swd_ws18_09"/>
+                      value="jdbc:postgresql://10.65.1.37:5433/swd_ws18_09"/>
             <property name="javax.persistence.jdbc.user" value="swd_ws18_09"/>
             <property name="javax.persistence.jdbc.password" value="89LzzJ"/>
         </properties>
