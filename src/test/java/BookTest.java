@@ -13,7 +13,7 @@ public class BookTest {
     static EntityTransaction transaction;
 
     static final String persistenceUnitName = "BookShop";
-    static final int id = 1;
+    private int id = 0;
     static final String title = "The Book";
     static final int pages = 100;
 
@@ -39,11 +39,11 @@ public class BookTest {
     @Test
     public void create() {
         transaction.begin();
-        Book books = new Book(id, title, pages, BookGenre.Fantasy);
+        Book books = new Book(title, pages, BookGenre.Fantasy);
         Assert.assertNotNull(books);
         manager.persist(books);
         transaction.commit();
-
+        id = (int)books.getId();
         System.out.println("Created and Persisted " + books);
 
     }

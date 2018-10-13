@@ -2,14 +2,12 @@ package pojo;
 
 import enums.BookGenre;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Enumerated;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity(name = "buch")
 public class Book {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String title;
     private int pages;
@@ -20,7 +18,7 @@ public class Book {
     public Book() {
     }
 
-    public Book(int id, String title, int pages, BookGenre genre) {
+    public Book(String title, int pages, BookGenre genre) {
         this.id = id;
         this.title = title;
         this.pages = pages;
@@ -34,10 +32,6 @@ public class Book {
 
     public long getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getTitle() {
