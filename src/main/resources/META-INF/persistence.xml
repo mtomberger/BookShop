@@ -2,6 +2,7 @@
     <persistence-unit name="BookShop">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <class>pojo.Book</class>
+        <class>pojo.Author</class>
         <properties>
             <property name="javax.persistence.jdbc.driver"
                       value="org.postgresql.Driver"/>
