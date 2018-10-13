@@ -1,6 +1,6 @@
 import org.junit.*;
 import pojo.Book;
-import pojo.BookGenre;
+import enums.BookGenre;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
