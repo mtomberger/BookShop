@@ -16,14 +16,12 @@ public class AuthorTest {
     static EntityManager manager;
     static EntityTransaction transaction;
 
-    static final String persistenceUnitName = "BookShop_UE_II";
-    static final int id = 1;
+    static final String persistenceUnitName = "sequence";
+    static int id = 0;
     static final String firstName = "Franz";
     static final String lastName  = "Kafka";
     static final String contraction  = "Kfk.";
     static final Date birthdate = parseDate("03.07.1883");
-
-    static final int pages = 100;
 
     @BeforeClass
     public static void setup() {
@@ -47,11 +45,11 @@ public class AuthorTest {
     @Test
     public void create() {
         transaction.begin();
-        Author authors = new Author(id, firstName, lastName, contraction, birthdate);
+        Author authors = new Author(firstName, lastName, contraction, birthdate);
         Assert.assertNotNull(authors);
         manager.persist(authors);
         transaction.commit();
-
+        id = authors.getId();
         System.out.println("Created and Persisted " + authors);
 
     }
