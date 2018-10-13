@@ -1,5 +1,6 @@
 import org.junit.*;
 import pojo.Book;
+import pojo.BookGenre;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -38,7 +39,7 @@ public class BookTest {
     @Test
     public void create() {
         transaction.begin();
-        Book books = new Book(id, title, pages);
+        Book books = new Book(id, title, pages, BookGenre.Fantasy);
         Assert.assertNotNull(books);
         manager.persist(books);
         transaction.commit();
@@ -55,11 +56,13 @@ public class BookTest {
 
         transaction.begin();
         books.addPages(pages);
+        books.setGenre(BookGenre.Fiction);
         transaction.commit();
 
         books = manager.find(Book.class, id);
 
         Assert.assertEquals(pages+pages, (int) books.getPages());
+        Assert.assertEquals(BookGenre.Fiction, books.getGenre());
         System.out.println("Updated " + books);
     }
 
