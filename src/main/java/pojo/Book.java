@@ -14,7 +14,7 @@ public class Book {
     private String title;
     private int pages;
     @Enumerated
-    @Column(columnDefinition = "smallint")
+    @Column(name = "category", columnDefinition = "smallint")
     private BookGenre genre;
 
     public Book() {
