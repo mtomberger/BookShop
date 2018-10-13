@@ -1,7 +1,8 @@
 CREATE TABLE buch (
    id INTEGER,
    title VARCHAR(75),
-   pages INTEGER
+   pages INTEGER,
+   genre SMALLINT
 );
 
 ALTER TABLE buch
