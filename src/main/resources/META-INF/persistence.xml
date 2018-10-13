@@ -14,7 +14,7 @@
         </properties>
     </persistence-unit>
 
-    <persistence-unit name="BookShop_UE_I">
+    <persistence-unit name="BookShop.simple">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <class>pojo.Book</class>
         <class>pojo.Author</class>
