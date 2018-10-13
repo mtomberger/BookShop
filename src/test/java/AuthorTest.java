@@ -16,7 +16,7 @@ public class AuthorTest {
     static EntityManager manager;
     static EntityTransaction transaction;
 
-    static final String persistenceUnitName = "BookShop";
+    static final String persistenceUnitName = "BookShop_UE_II";
     static final int id = 1;
     static final String firstName = "Franz";
     static final String lastName  = "Kafka";
