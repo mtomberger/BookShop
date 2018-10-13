@@ -1,3 +1,4 @@
+import junit.framework.TestCase;
 import org.junit.*;
 import pojo.Book;
 import enums.BookGenre;
@@ -13,7 +14,7 @@ public class BookTest {
     static EntityTransaction transaction;
 
     static final String persistenceUnitName = "BookShop";
-    private int id = 0;
+    static int id = 0;
     static final String title = "The Book";
     static final int pages = 100;
 
@@ -43,7 +44,7 @@ public class BookTest {
         Assert.assertNotNull(books);
         manager.persist(books);
         transaction.commit();
-        id = (int)books.getId();
+        id = (int) books.getId();
         System.out.println("Created and Persisted " + books);
 
     }
