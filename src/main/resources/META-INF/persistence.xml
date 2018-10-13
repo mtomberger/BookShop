@@ -4,6 +4,7 @@
         <class>pojo.Book</class>
         <class>pojo.Author</class>
         <properties>
+            <property name="javax.persistence.jdbc.default_schema" value="UE_II"/>
             <property name="javax.persistence.jdbc.driver"
                       value="org.postgresql.Driver"/>
             <property name="javax.persistence.jdbc.url"

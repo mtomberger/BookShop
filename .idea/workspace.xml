@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="409b8f00-2818-421c-b622-2271a5c9f1cb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/db-scripts/SCRIPTS_II.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AuthorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,8 +56,8 @@
       <file leaf-file-name="BookTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/BookTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="82" selection-end-column="1" />
+            <state relative-caret-position="306">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthorTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AuthorTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AuthorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+            <state relative-caret-position="285">
+              <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,11 +77,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Author.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pojo/Author.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="102">
+              <caret line="6" column="81" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
             </state>
           </provider>
         </entry>
@@ -102,8 +110,8 @@
       <file leaf-file-name="SCRIPTS_I.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/db-scripts/SCRIPTS_I.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="8" selection-end-column="40" />
+            <state>
+              <caret selection-end-line="8" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -111,8 +119,8 @@
       <file leaf-file-name="SCRIPTS_II.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/db-scripts/SCRIPTS_II.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            <state>
+              <caret column="25" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -149,8 +157,8 @@
         <option value="$PROJECT_DIR$/src/main/db-scripts/SCRIPTS_I.sql" />
         <option value="$PROJECT_DIR$/src/main/db-scripts/SCRIPTS_II.sql" />
         <option value="$PROJECT_DIR$/src/main/java/pojo/Author.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/test/java/AuthorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
       </list>
     </option>
   </component>
@@ -420,8 +428,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AuthorTest.remove" />
-        <item itemvalue="JUnit.AuthorTest" />
         <item itemvalue="JUnit.BookTest" />
+        <item itemvalue="JUnit.AuthorTest" />
         <item itemvalue="JUnit.BookTest.create" />
       </list>
     </recent_temporary>
@@ -452,39 +460,46 @@
       <option name="project" value="LOCAL" />
       <updated>1539425465234</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add author pojo and tests">
+      <created>1539426659597</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1539426659597</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BookTest - 2018.09.29 at 15h 44m 15s.xml">
+    <history-entry file="AuthorTest - 2018.10.13 at 12h 29m 13s.xml">
+      <configuration name="AuthorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuthorTest_remove - 2018.10.13 at 12h 29m 27s.xml">
+      <configuration name="AuthorTest.remove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuthorTest - 2018.10.13 at 12h 29m 40s.xml">
+      <configuration name="AuthorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuthorTest_remove - 2018.10.13 at 12h 30m 00s.xml">
+      <configuration name="AuthorTest.remove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuthorTest_remove - 2018.10.13 at 12h 51m 41s.xml">
+      <configuration name="AuthorTest.remove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuthorTest_remove - 2018.10.13 at 12h 52m 12s.xml">
+      <configuration name="AuthorTest.remove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuthorTest_remove - 2018.10.13 at 12h 52m 50s.xml">
+      <configuration name="AuthorTest.remove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuthorTest_remove - 2018.10.13 at 12h 53m 07s.xml">
+      <configuration name="AuthorTest.remove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookTest - 2018.10.13 at 12h 53m 35s.xml">
       <configuration name="BookTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BookTest - 2018.09.29 at 15h 44m 57s.xml">
-      <configuration name="BookTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest - 2018.09.29 at 15h 47m 08s.xml">
-      <configuration name="BookTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest_create - 2018.09.29 at 15h 48m 17s.xml">
-      <configuration name="BookTest.create" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest - 2018.09.29 at 15h 51m 33s.xml">
-      <configuration name="BookTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BooksTest - 2018.09.29 at 15h 55m 11s.xml">
-      <configuration name="BooksTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BooksTest - 2018.09.29 at 15h 57m 41s.xml">
-      <configuration name="BooksTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest - 2018.10.13 at 11h 45m 54s.xml">
-      <configuration name="BookTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest - 2018.10.13 at 11h 55m 55s.xml">
-      <configuration name="BookTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest - 2018.10.13 at 12h 10m 00s.xml">
-      <configuration name="BookTest" configurationId="JUnit" />
+    <history-entry file="AuthorTest_remove - 2018.10.13 at 12h 54m 23s.xml">
+      <configuration name="AuthorTest.remove" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -502,12 +517,12 @@
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32904884" />
-      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.3293011" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3293011" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32943678" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3293011" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3293011" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3293011" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25642672" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25642672" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -555,7 +570,8 @@
     <MESSAGE value="Merge branch 'master' of https://github.com/mtomberger/BookShop&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="rename column, missmatch" />
     <MESSAGE value="workspace update" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace update" />
+    <MESSAGE value="add author pojo and tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add author pojo and tests" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/db-scripts/SCRIPTS_I.sql">
@@ -782,13 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/db-scripts/SCRIPTS_I.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="8" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pojo/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -817,63 +826,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BookTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="82" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pojo/Author.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="119">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#911#912#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/db-scripts/SCRIPTS_I.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="8" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/db-scripts/SCRIPTS_II.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        <state>
+          <caret column="25" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/BookTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AuthorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+        <state relative-caret-position="285">
+          <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="81" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
         </state>
       </provider>
     </entry>
