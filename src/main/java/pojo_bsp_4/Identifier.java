@@ -1,7 +1,5 @@
 package pojo_bsp_4;
 
-import pojo_bsp_4.Book;
-
 import javax.persistence.*;
 
 // Identifier in Beispiel 4
