@@ -30,7 +30,7 @@
 
     <persistence-unit name="identifierBsp4">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-        <class>pojo_bsp_1_2_3.Book</class>
+        <class>pojo_bsp_4.Book</class>
         <class>pojo_bsp_4.Identifier</class>
         <properties>
             <property name="javax.persistence.jdbc.driver"

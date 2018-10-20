@@ -9,7 +9,6 @@ import javax.persistence.*;
 @Table(name = "buch", schema = "bsp4")
 public class Book {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String title;
     private int pages;
@@ -18,6 +17,7 @@ public class Book {
     private BookGenre genre;
 
     @OneToOne
+    @JoinColumn(name = "fk_identifier")
     private Identifier identifier;
 
     public Book() {
@@ -70,5 +70,7 @@ public class Book {
     public void setIdentifier(Identifier identifier) {
         this.identifier = identifier;
     }
+
+    public void setId(int id) { this.id = id; }
 }
 

@@ -26,7 +26,6 @@ public class BookIdentifierTest {
     static final String ISBN = "978-3150096765";
     static final String QR_CODE = "EINQRCODE";
 
-
     @BeforeClass
     public static void setup() {
         factory = Persistence.createEntityManagerFactory(persistenceUnitName);
@@ -52,36 +51,23 @@ public class BookIdentifierTest {
 
         Identifier identifier = new Identifier(ISBN, QR_CODE);
         Book books = new Book(TITLE, PAGES, BookGenre.Fantasy);
+        books.setId(book_id);
+        identifier.setId(ident_id);
 
         books.setIdentifier(identifier);
         identifier.setBook(books);
 
         Assert.assertNotNull(books);
         manager.persist(books);
+        manager.persist(identifier);
+
         transaction.commit();
         book_id = (int) books.getId();
         ident_id = identifier.getId();
         System.out.println("Created and Persisted " + books);
         System.out.println("Created Identifier: " + books.getIdentifier());
+        System.out.println("Der ISBN von " + books.getTitle() + " ist " + books.getIdentifier().getIsbn());
 
-    }
-
-    @Test
-    public void modify() {
-        Book books = manager.find(Book.class, book_id);
-        Assert.assertNotNull(books);
-        System.out.println("Found " + books);
-
-        transaction.begin();
-        books.addPages(PAGES);
-        books.setGenre(BookGenre.Fiction);
-        transaction.commit();
-
-        books = manager.find(Book.class, book_id);
-
-        Assert.assertEquals(PAGES + PAGES, (int) books.getPages());
-        Assert.assertEquals(BookGenre.Fiction, books.getGenre());
-        System.out.println("Updated " + books);
     }
 
     @Test
