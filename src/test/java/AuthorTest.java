@@ -1,7 +1,5 @@
-import enums.BookGenre;
 import org.junit.*;
-import pojo.Author;
-import pojo.Book;
+import pojo_bsp_1_2_3.Author;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

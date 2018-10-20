@@ -1,4 +1,4 @@
-package pojo;
+package pojo_bsp_1_2_3;
 
 import enums.BookGenre;
 

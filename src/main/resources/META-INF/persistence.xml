@@ -1,8 +1,8 @@
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
     <persistence-unit name="sequence">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-        <class>pojo.Book</class>
-        <class>pojo.Author</class>
+        <class>pojo_bsp_1_2_3.Book</class>
+        <class>pojo_bsp_1_2_3.Author</class>
         <properties>
             <property name="javax.persistence.jdbc.default_schema" value="sequence"></property>
             <property name="javax.persistence.jdbc.driver"
@@ -16,8 +16,22 @@
 
     <persistence-unit name="BookShop.simple">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-        <class>pojo.Book</class>
-        <class>pojo.Author</class>
+        <class>pojo_bsp_1_2_3.Book</class>
+        <class>pojo_bsp_1_2_3.Author</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver"
+                      value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.url"
+                      value="jdbc:postgresql://10.65.1.37:5433/swd_ws18_09"/>
+            <property name="javax.persistence.jdbc.user" value="swd_ws18_09"/>
+            <property name="javax.persistence.jdbc.password" value="89LzzJ"/>
+        </properties>
+    </persistence-unit>
+
+    <persistence-unit name="identifierBsp4">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>pojo_bsp_1_2_3.Book</class>
+        <class>pojo_bsp_4.Identifier</class>
         <properties>
             <property name="javax.persistence.jdbc.driver"
                       value="org.postgresql.Driver"/>

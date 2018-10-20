@@ -1,6 +1,4 @@
-package pojo;
-
-import com.sun.javafx.beans.IDProperty;
+package pojo_bsp_1_2_3;
 
 import javax.persistence.*;
 import java.util.Date;
